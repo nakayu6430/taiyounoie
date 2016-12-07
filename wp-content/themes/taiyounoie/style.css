@@ -1,0 +1,277 @@
+@charset "UTF-8";
+
+/*
+Theme Name: taiyounoie
+Author: Yu Nakamura
+Description: This is my original theme.
+Version:1.0
+*/
+
+/*本体のフォント*/
+body{
+	margin: 0;
+	font-family: 'メイリオ',
+	'Hiragino Kaku Gothic Pro', sans-serif
+}
+
+th{
+	padding: 3px;
+	white-space: nowrap;
+	background-color: #008000;
+	color: #FFFFFF;
+}
+
+td{
+	background-color: #e3e3e3;
+}
+
+.container{
+	max-width: 650px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px
+}
+
+.container .left{
+	float:left;
+}
+
+.container .right{
+	float:right;
+}
+
+.container #information{
+	float: right;
+}
+
+.news {
+margin:5px;
+padding:10px;
+border:1px solid black;
+background-color:#EEEEEE;
+} 
+
+.news h1{
+  font-weight: bold ;
+  font-size: 15px ;
+  border-bottom:1px dotted;
+}
+
+/*記事(h1タグのフォントの指定)*/
+article{
+	margin-bottom: 40px
+}
+
+article h1{
+	margin: 0;
+	font-size: 32px;
+	font-weight: normal
+}
+
+article h1 a{
+	color: #000000;
+	text-decoration: none
+}
+
+/*記事の付加情報*/
+.postinfo{
+	margin-top: 15px;/*postinfoの上の余白*/
+	font-size: 14px
+}
+
+.postinfo a{
+	color: #000000;
+	text-decoration: none
+}
+
+.postinfo .postcat{
+	margin-left: 20px;/*上二つの間の余白*/
+}
+
+.postinfo i{
+	color: #888888
+}
+
+/*前後の記事へのリンク*/
+.pagenav a{
+	padding: 5px 10px;
+	border:solid 1px #cccccc;
+	border-radius: 10px;
+	color: #666666;
+	font-size: 12px;
+	text-decoration: none
+}
+
+.pagenav .old a{
+	float: left
+}
+
+.pagenav .new a{
+	float: right
+}
+
+.pagenav{
+	overflow: hidden;
+	margin: 40px 0;
+}
+
+/*ヘッダー*/
+header{
+	margin-bottom: 40px;
+	background-color: #ff7e1a;
+	color: #ffffff
+}
+
+header .headimg img{
+		height: 300px;
+    	width: 100%;
+}
+
+header a{
+	color: #ffffff;
+	text-decoration: none
+}
+
+.siteinfo{
+	overflow: hidden;
+	padding-top: 14px;
+	padding-bottom: 14px;	
+	background-color: #ff7e1a;
+	color: #ffffff;
+}
+
+.siteinfo a{
+	color: #ffffff;
+}
+
+.siteinfo h1{
+	float: left;
+	margin: 0;
+	font-family: 'Acme', sans-serif;
+	font-size: 20px
+}
+
+.siteinfo p{
+	float: right;
+	margin: 0;
+	margin-top: 5px;
+	font-size: 12px
+}
+
+/*ナビゲーションメニュー*/
+nav ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	overflow: hidden
+}
+
+nav li{
+	float: left;
+	margin-right: 15px
+}
+
+nav li a{
+	display: block;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	border-bottom: solid 5px transparent
+}
+
+nav li a:hover{
+	border-bottom-color: #00ccff 
+}
+
+nav li.current-menu-item a{
+	border-bottom-color: #e6cc1c
+}
+
+/*フッター*/
+footer{
+	margin-top: 40px;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	background-color: #ff7e1a;
+	color: #ffffff
+}
+
+/*メニュー*/
+.blogmenu ul{
+	margin: 0;
+	padding: 0;
+	list-style: none
+}
+
+.blogmenu .widget{
+	margin-bottom: 30px;
+	padding: 20px;
+	background-color: #e8e8e8
+}
+
+.blogmenu .widgettitle{
+	margin-top: 10px;
+	margin-bottom: 20px;
+	border-right: solid 10px #ff7e1a;
+	font-size: 14px
+}
+
+.blogmenu li a{
+	display: block;
+	padding: 10px 5px;
+	color: #666666;
+	font-size: 14px;
+	text-decoration: none
+}
+
+.blogmenu li a:hover{
+	background-color: #ffffff
+}
+
+/*レスポンシブの設定*/
+@media (min-width: 768px){
+/*2段組*/
+.container{
+	max-width: 1000px;
+	overflow: hidden
+}
+
+.contents{
+	width: 65%;
+	float: left
+}
+
+.blogmenu{
+	width: 30%;
+	float: left
+}
+
+/*ナビゲーションメニュー*/
+nav li{
+	margin-right: 40px
+}
+
+}/*end of media*/
+
+/*記事の概要*/
+.excerpt p{
+	font-size: 14px
+}
+
+.excerpt .more a{
+	padding: 5px 20px;
+	border: solid 1px #cccccc;
+	border-radius: 5px;
+	color: #000000;
+	text-decoration: none;
+}
+
+.excerpt .more a:hover{
+	background-color: #e6cc1c
+}
+
+.excerpt .more i{
+	margin-left: 10px;
+	color: #cccccc
+}
